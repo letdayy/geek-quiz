@@ -16,17 +16,23 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionTitle: UILabel!
     @IBOutlet var questionButtons: [UIButton]!
     
+    // sender é o botão!
     @IBAction func awnserButtonPressed(_ sender: UIButton) {
         let checkAnswerCorrect = questions[questionNumber].correctAnswer == sender.tag
         
         if checkAnswerCorrect {
             print("O usuário acertou a resposta!")
+            sender.backgroundColor = UIColor(red: 0/255, green: 202/255, blue: 57/255, alpha: 1.0)
+        } else {
+            sender.backgroundColor = UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1.0)
         }
         
         if questionNumber < questions.count - 1 {
             questionNumber += 1
             questionConfiguration()
         }
+        
+        
         
         
         
@@ -55,6 +61,7 @@ class QuestionViewController: UIViewController {
             button.layer.cornerRadius = 16.0
         }
         
+        
        
     }
     
@@ -65,6 +72,9 @@ class QuestionViewController: UIViewController {
             let buttonTitle = questions[questionNumber].answers[button.tag]
             
             button.setTitle(buttonTitle, for: .normal)
+            
+            // para o botão voltar a cor normal na próxima questão
+            button.backgroundColor = UIColor(red: 255/255, green: 49/255, blue: 234/255, alpha: 1.0)
         }
     }
 
