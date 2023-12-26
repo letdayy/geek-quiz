@@ -17,8 +17,14 @@ class QuestionViewController: UIViewController {
     @IBOutlet var questionButtons: [UIButton]!
     
     @IBAction func awnserButtonPressed(_ sender: UIButton) {
-        print(sender.tag)
+        let checkAnswerCorrect = questions[questionNumber].correctAnswer == sender.tag
+        
+        if checkAnswerCorrect {
+            print("O usuário acertou a resposta!")
+        }
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
