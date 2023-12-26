@@ -22,6 +22,14 @@ class QuestionViewController: UIViewController {
         if checkAnswerCorrect {
             print("O usuário acertou a resposta!")
         }
+        
+        if questionNumber < questions.count - 1 {
+            questionNumber += 1
+            questionConfiguration()
+        }
+        
+        
+        
     }
     
     
@@ -47,15 +55,17 @@ class QuestionViewController: UIViewController {
             button.layer.cornerRadius = 16.0
         }
         
+       
+    }
+    
+    func questionConfiguration() {
+        questionTitle.text = questions[questionNumber].title
+        
         for button in questionButtons {
             let buttonTitle = questions[questionNumber].answers[button.tag]
             
             button.setTitle(buttonTitle, for: .normal)
         }
-    }
-    
-    func questionConfiguration() {
-        questionTitle.text = questions[questionNumber].title
     }
 
 
