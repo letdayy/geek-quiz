@@ -29,11 +29,10 @@ class QuestionViewController: UIViewController {
         
         if questionNumber < questions.count - 1 {
             questionNumber += 1
-            questionConfiguration()
+            //colocando um tempo entre as questões para poder ver o acerto ou erro
+            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(questionConfiguration), userInfo: nil, repeats: false)
+            
         }
-        
-        
-        
         
         
     }
@@ -65,7 +64,8 @@ class QuestionViewController: UIViewController {
        
     }
     
-    func questionConfiguration() {
+    //código para fazer aparecer as questões e as alternativas aparecerem
+    @objc func questionConfiguration() {
         questionTitle.text = questions[questionNumber].title
         
         for button in questionButtons {
