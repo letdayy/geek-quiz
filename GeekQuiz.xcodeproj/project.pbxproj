@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0367CC42B41153300078225 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0367CC32B41153300078225 /* PerformanceViewController.swift */; };
 		B08349752B3884C100AABB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08349742B3884C100AABB53 /* AppDelegate.swift */; };
 		B08349772B3884C100AABB53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08349762B3884C100AABB53 /* SceneDelegate.swift */; };
 		B08349792B3884C100AABB53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08349782B3884C100AABB53 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0367CC32B41153300078225 /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 		B08349712B3884C100AABB53 /* GeekQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08349742B3884C100AABB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B08349762B3884C100AABB53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				B08349822B3884C200AABB53 /* Info.plist */,
 				B083498A2B38DFBF00AABB53 /* QuestionViewController.swift */,
 				B0DAA0A82B3B71CB006F2E4E /* Question.swift */,
+				B0367CC32B41153300078225 /* PerformanceViewController.swift */,
 			);
 			path = GeekQuiz;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				B08349752B3884C100AABB53 /* AppDelegate.swift in Sources */,
 				B083498B2B38DFBF00AABB53 /* QuestionViewController.swift in Sources */,
 				B08349772B3884C100AABB53 /* SceneDelegate.swift in Sources */,
+				B0367CC42B41153300078225 /* PerformanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
