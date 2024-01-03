@@ -9,12 +9,26 @@ import UIKit
 
 class PerformanceViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+    @IBOutlet weak var percentualLabel: UILabel!
+    
+    
+    @IBOutlet weak var restartQuizButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        layoutConfigure()
         // Do any additional setup after loading the view.
     }
     
+    
+    func layoutConfigure() {
+        restartQuizButton.layer.cornerRadius = 16.0
+    }
 
     /*
     // MARK: - Navigation

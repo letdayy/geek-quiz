@@ -208,6 +208,11 @@
                             <constraint firstItem="CPy-8j-yyI" firstAttribute="top" secondItem="MnI-wD-IrY" secondAttribute="bottom" constant="72" id="teG-Pq-kaU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="percentualLabel" destination="oIR-iv-k07" id="Vke-ff-a8e"/>
+                        <outlet property="restartQuizButton" destination="pWI-VW-JT4" id="kW0-Fk-hVs"/>
+                        <outlet property="resultLabel" destination="CPy-8j-yyI" id="XUk-9f-YEL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uew-TU-zde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
