@@ -8,6 +8,8 @@
 import UIKit
 
 class PerformanceViewController: UIViewController {
+    
+    var score: Int?
 
     @IBOutlet weak var resultLabel: UILabel!
     

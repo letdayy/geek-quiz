@@ -32,6 +32,8 @@ class QuestionViewController: UIViewController {
             //colocando um tempo entre as questões para poder ver o acerto ou erro
             Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(questionConfiguration), userInfo: nil, repeats: false)
             
+        } else {
+            navigateToPerformanceScreen()
         }
         
         
@@ -75,9 +77,18 @@ class QuestionViewController: UIViewController {
             
             // para o botão voltar a cor normal na próxima questão
             button.backgroundColor = UIColor(red: 255/255, green: 49/255, blue: 234/255, alpha: 1.0)
-        }
+        } 
+    }
+    
+    
+    func navigateToPerformanceScreen() {
+        performSegue(withIdentifier: "goToPerformanceScreen", sender: nil)
     }
 
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let performanceVC = segue.destination as? PerformanceViewController else { return }
+        performanceVC.score = score
+    }
 
 }
